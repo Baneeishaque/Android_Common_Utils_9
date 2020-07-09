@@ -21,7 +21,6 @@ import ndk.utils_android9.R;
 
 public abstract class RecyclerViewWithToolbarAndProgressBarActivity extends ActivityWithContexts {
 
-    private Toolbar toolbar;
     private ProgressBar progressBar;
     public RecyclerView recyclerView;
     private SharedPreferences sharedPreferences;
@@ -32,7 +31,7 @@ public abstract class RecyclerViewWithToolbarAndProgressBarActivity extends Acti
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recyclerview_with_toolbar_and_progressbar);
 
-        toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         recyclerView = findViewById(R.id.recyclerView);
         progressBar = findViewById(R.id.progressBar);
 
