@@ -8,4 +8,8 @@
         android:minSdkVersion="9"
         android:targetSdkVersion="29" />
 
+    <application>
+        <activity android:name="ndk.utils_android9.activities.RecyclerViewWithToolbarAndProgressBarActivity" />
+    </application>
+
 </manifest>
