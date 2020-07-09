@@ -35,5 +35,5 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation project(path: ':Utils_1:common1')
     implementation project(path: ':Utils_3:common3')
-
+    implementation project(path: ':Utils_Resources:common')
 }
