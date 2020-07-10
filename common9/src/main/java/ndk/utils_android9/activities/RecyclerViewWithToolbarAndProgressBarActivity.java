@@ -23,8 +23,8 @@ import org.json.JSONObject;
 import ndk.utils_android1.ActivityWithContexts;
 import ndk.utils_android1.ExceptionUtils;
 import ndk.utils_android1.SharedPreferencesUtils1;
-import ndk.utils_android3.HttpApiSelectTask;
-import ndk.utils_android3.HttpApiSelectTaskWrapper;
+import ndk.utils_android3.HttpApiSelectTask3;
+import ndk.utils_android3.HttpApiSelectTaskWrapper3;
 import ndk.utils_android9.R;
 
 public abstract class RecyclerViewWithToolbarAndProgressBarActivity extends ActivityWithContexts {
@@ -54,13 +54,13 @@ public abstract class RecyclerViewWithToolbarAndProgressBarActivity extends Acti
 
     public void fetchData() {
 
-        HttpApiSelectTask.AsyncResponseJSONArray httpApiGetDbSelectTaskResponseHandler = jsonArray -> {
+        HttpApiSelectTask3.AsyncResponseJSONArray httpApiGetDbSelectTaskResponseHandler = jsonArray -> {
 
             for (int i = 1; i < jsonArray.length(); i++) {
 
                 try {
 
-                    processJsonObjectInFetchedJsonArray(jsonArray.getJSONObject(i));
+                    processJsonObjectInFetchedJsonArray(i,jsonArray.getJSONObject(i));
                     viewRecyclerView();
 
                 } catch (JSONException exception) {
@@ -69,12 +69,12 @@ public abstract class RecyclerViewWithToolbarAndProgressBarActivity extends Acti
                 }
             }
         };
-        HttpApiSelectTaskWrapper.execute(configureFetchUrl(), this, progressBar, recyclerView, configureApplicationName(), new Pair[]{}, httpApiGetDbSelectTaskResponseHandler);
+        HttpApiSelectTaskWrapper3.execute(configureFetchUrl(), this, progressBar, recyclerView, configureApplicationName(), new Pair[]{}, httpApiGetDbSelectTaskResponseHandler);
     }
 
     public abstract String configureFetchUrl();
 
-    public abstract void processJsonObjectInFetchedJsonArray(JSONObject jsonObject);
+    public abstract void processJsonObjectInFetchedJsonArray(int i, JSONObject jsonObject);
 
     public void viewRecyclerView() {
 
