@@ -21,7 +21,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import ndk.utils_android1.ActivityWithContexts;
-import ndk.utils_android1.ExceptionUtils;
+import ndk.utils_android1.ExceptionUtils1;
 import ndk.utils_android1.SharedPreferencesUtils1;
 import ndk.utils_android3.HttpApiSelectTask3;
 import ndk.utils_android3.HttpApiSelectTaskWrapper3;
@@ -65,7 +65,7 @@ public abstract class RecyclerViewWithToolbarAndProgressBarActivity extends Acti
 
                 } catch (JSONException exception) {
 
-                    ExceptionUtils.handleExceptionOnGui(getApplicationContext(), configureApplicationName(), exception);
+                    ExceptionUtils1.handleExceptionOnGui(getApplicationContext(), configureApplicationName(), exception);
                 }
             }
         };
