@@ -1,0 +1,9 @@
+[submodule "Utils3"]
+	path = Utils3
+	url = https://github.com/Baneeishaque/Android_Common_Utils_3.git
+[submodule "Resources"]
+	path = Resources
+	url = https://github.com/Baneeishaque/Android_Common_Resources.git
+[submodule "Utils1"]
+	path = Utils1
+	url = https://github.com/Baneeishaque/Android_Common_Utils_API_1.git
