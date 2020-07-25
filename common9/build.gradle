@@ -34,6 +34,6 @@ dependencies {
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation project(path: ':Utils_1:common1')
-    implementation project(path: ':Utils_3:common3')
-    implementation project(path: ':Utils_Resources:common')
+    implementation project(path: ':Utils3:common3')
+    implementation project(path: ':Resources:common')
 }

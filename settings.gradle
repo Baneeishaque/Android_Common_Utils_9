@@ -1,2 +1,12 @@
 include ':common9'
+
+include ':Utils_1:common1'
+project(':Utils_1:common1').projectDir=new File(settingsDir,'./Utils1/common1')
+
+include ':Utils3:common3'
+project(':Utils3:common3').projectDir=new File(settingsDir,'./Utils3/common3')
+
+include ':Resources:common'
+project(':Resources:common').projectDir=new File(settingsDir,'./Resources/common')
+
 rootProject.name = "Android_Common_Utis_9"
