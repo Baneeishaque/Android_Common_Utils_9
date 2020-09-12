@@ -9,4 +9,4 @@ project(':Utils3:common3').projectDir=new File(settingsDir,'./Utils3/common3')
 include ':Resources:common'
 project(':Resources:common').projectDir=new File(settingsDir,'./Resources/common')
 
-rootProject.name = "Android_Common_Utis_9"
+rootProject.name = "Android_Common_Utils_9"
