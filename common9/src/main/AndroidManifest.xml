@@ -1,9 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ndk.utils_android9">
-
-    <application>
-        <activity android:name=".activities.RecyclerViewWithToolbarAndProgressBarActivity" />
-    </application>
-
-</manifest>
+    package="ndk.utils_android9"/>
