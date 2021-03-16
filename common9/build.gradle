@@ -88,6 +88,6 @@ android {
 dependencies {
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation project(path: ':Utils_1:common1')
+    implementation project(path: ':Utils1:common1')
     implementation project(path: ':Utils3:common3')
 }
