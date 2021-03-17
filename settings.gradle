@@ -1,10 +1,10 @@
 include ':common9'
 
 include ':Utils3:common3'
-project(':Utils3:common3').projectDir=new File(settingsDir,'./Utils7/Utils4/Utils3/common3')
+project(':Utils3:common3').projectDir = new File(settingsDir, './Utils7/Utils4/Utils3/common3')
 
 include ':Utils1:common1'
-project(':Utils1:common1').projectDir=new File(settingsDir,'./Utils7/Utils4/Utils3/Utils1/common1')
+project(':Utils1:common1').projectDir = new File(settingsDir, './Utils7/Utils4/Utils3/Utils1/common1')
 
 rootProject.name = "Android-Common-Utils-9"
 
